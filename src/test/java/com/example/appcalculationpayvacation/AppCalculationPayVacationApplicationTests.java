@@ -32,8 +32,8 @@ class AppCalculationPayVacationApplicationTests {
 	@Test
 	public void testCalculate() {
 		PayCalculateController controller = new PayCalculateController(vacationService);
-		VacationData testData = new VacationData(50000, 20); // Example test data
-		double expectedPay = 10000.0; // Expected pay for the given test data
+		VacationData testData = new VacationData(50000, 20); // Пример данных
+		double expectedPay = 10000.0; // Ожидаемая оплата отпускных
 
 		when(vacationService.vacationPayCalculator(testData)).thenReturn(expectedPay);
 
